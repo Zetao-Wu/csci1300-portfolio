@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&lt;Responsive Redesign /&gt; | Case Study</title>
+  <link rel="stylesheet" href="responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <a href="../" class="logo">&lt;/AccessibleComponent&gt;</a>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <a href="../#hero">01. &lt;home&gt;</a>
+      <a href="../#skills">02. &lt;skills&gt;</a>
+      <a href="../#experience">03. &lt;experience&gt;</a>
+      <a href="../#projects">04. &lt;projects&gt;</a>
+      <a href="../#contact">05. &lt;contact&gt;</a>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-container">
+        <div class="text_hero">
+          <h1>Responsive<br>&&<br>Redesign</h1>
+        </div>
+        <div class="image_hero">
+          <img src="./redesign.png" alt="responsive redesign visuals">
+        </div>
+      </div>
+    </section>
+
+    <section class="overview">
+      <div class="overview-inner">
+        <div class="overview-left">
+          <img src="./original.png" alt="annotated screenshot of original DMV page">
+        </div>
+        <div class="overview-right">
+          <h2>Overview</h2>
+          <h3>Self-Checkout Machines</h3>
+          <ul>
+            <li><strong>Objective:</strong> Identify key UX and accessibility flaws in a live government webpage.</li>
+            <li><strong>Methodology:</strong> Used usability heuristics, WebAIM WAVE scanner, and annotated critique.</li>
+            <li><strong>Outcome:</strong> Delivered responsive redesign with full screen-size support and accessibility improvements.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="usability">
+      <h2>Identified Issues</h2>
+      <ul>
+        <li>Weak visual hierarchy makes it hard to find primary actions.</li>
+        <li>Poor contrast and missing semantic elements hinder accessibility.</li>
+        <li>Text-heavy layout without clear guidance for beginners.</li>
+        <li>Non-responsive layout breaks on mobile devices.</li>
+      </ul>
+    </section>
+
+    <section class="style-guide">
+      <h2>Visual Redesign & Style Guide</h2>
+      <p>Using Figma, I developed a consistent UI system including colors, typography, and responsive layouts across devices. Here is the (<a href="https://www.figma.com/design/L5Ri9HVFdEUhUQhxidClk6/Untitled?node-id=2-298&t=rsbjU3OdQ2ddOamC-1" class="external-link">Figma Link</a>)</p>
+      <div class="centered-img">
+        <img src="./original.png" alt="Style guide with colors and components">
+      </div>
+    </section>
+
+    <section class="mockups">
+      <h2>Annotated Mockups</h2>
+      <div class="mockup-grid">
+        <div>
+          <h3>Mobile</h3>
+          <img src="./mobile.png" alt="mobile mockup">
+        </div>
+        <div>
+          <h3>Tablet</h3>
+          <img src="./tablet.png" alt="tablet mockup">
+        </div>
+        <div>
+          <h3>Desktop</h3>
+          <img src="./laptop.png" alt="desktop mockup">
+        </div>
+      </div>
+    </section>
+
+    <section class="final-redesign">
+      <h2>Responsive Redesign</h2>
+      <p>This page was implemented manually in HTML and CSS using flexbox and media queries. Try resizing!</p>
+      <a href="https://responsive-redesign-lemon.vercel.app/" class="external-link">Live Demo</a>
+    </section>
+  </main>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => links.classList.toggle('active'));
+  </script>
+</body>
+
+</html>
