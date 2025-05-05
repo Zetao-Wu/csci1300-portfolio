@@ -1175,3 +1175,105 @@ h2.section-title {
     }
   }
   
+  .modal-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .modal-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-width: 280px;
+  }
+
+  .modal-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .modal-images img {
+    width: 100%;
+    max-width: 460px;
+    border-radius: 10px;
+    border: 1px solid var(--primary);
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.15);
+  }
+
+  .modal-stats-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .modal-metric-box {
+    flex: 1;
+    background-color: #12161c;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(0, 255, 136, 0.1);
+  }
+
+  .metric-label {
+    color: var(--fg);
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+
+  .metric-count {
+    font-size: 1.2rem;
+    color: var(--accent);
+  }
+
+  .modal-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: 'Share Tech Mono', monospace;
+  }
+
+  .modal-btn:hover {
+    background: var(--primary);
+    color: var(--bg);
+  }
+
+  .modal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .modal-tags .tag {
+    background-color: #12161c;
+    border: 1px solid var(--primary);
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    color: var(--fg);
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.85rem;
+  }
+
+  .modal-features li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+    color: var(--muted);
+  }
+
+  .code-style {
+    font-family: 'Share Tech Mono', monospace;
+    color: var(--accent);
+  }
