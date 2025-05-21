@@ -1,4 +1,4 @@
-const words = ["Product Designer", "Software Engineer", "DL/ML Engineer", "Fullstack Developer", "AI Researcher"];
+const words = ["Product Designer", "Software Engineer", "AI/ML Engineer", "Fullstack Developer", "AI Researcher"];
 const typedText = document.getElementById("typed-text");
 
 let wordIndex = 0;
